@@ -1,0 +1,8 @@
+
+<form action="/login" method="post">
+    <input type="text" name="username"  placeholder="User name" />
+    <input type="password" name="password"  placeholder="Password" />
+    <input type="hidden" name="_csrf" value="${{_csrf.token}}" />
+    <a href="/registration">Add new user</a>
+    <button type="submit">Sign in</button>
+</form>
