@@ -68,7 +68,7 @@ public class MainController {
             @RequestParam String tag, Map<String, Object> model
             ) throws IOException {
         Message message = new Message(text, tag, user);
-
+        System.out.println(message.toString());
         messageRepo.save(message);
 
         Iterable<Message> messages = messageRepo.findAll();
